@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DiscordHub — Discord-подписки и сообщество</title>
+  <meta name="description" content="Premium Discord-подписки по лучшим ценам. Присоединяйся к сообществу: форумы, гайды и реальные отзывы.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DiscordHub — Discord-подписки и сообщество">
+  <meta property="og:description" content="Premium Discord-подписки по лучшим ценам. Форумы, гайды и реальные отзывы.">
+  <meta property="og:image" content="assets/og-image.png">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a href="#top" class="logo">
+        <span class="logo__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.24.5a18.3 18.3 0 0 1 4.35 1.35 16.6 16.6 0 0 0-5-1.6 17.9 17.9 0 0 0-4.6 0 16.6 16.6 0 0 0-5 1.6A18.3 18.3 0 0 1 9.6 3.5L9.36 3A19.8 19.8 0 0 0 4.47 4.4C1.6 8.63.82 12.75 1.2 16.8a19.9 19.9 0 0 0 6.06 3.05l.73-1a11.6 11.6 0 0 1-1.83-.88l.45-.35a14.2 14.2 0 0 0 12.13 0l.45.35c-.58.34-1.19.63-1.83.88l.73 1a19.8 19.8 0 0 0 6.06-3.05c.45-4.7-.77-8.79-3.35-12.4ZM8.55 14.32c-1.18 0-2.15-1.08-2.15-2.4s.95-2.42 2.15-2.42 2.17 1.09 2.15 2.42c0 1.32-.96 2.4-2.15 2.4Zm6.9 0c-1.18 0-2.15-1.08-2.15-2.4s.95-2.42 2.15-2.42 2.17 1.09 2.15 2.42c0 1.32-.95 2.4-2.15 2.4Z"/></svg>
+        </span>
+        <span class="logo__text">Discord<span class="logo__accent">Hub</span></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#hero" class="nav__link">Home</a>
+        <a href="#subscriptions" class="nav__link">Subscriptions</a>
+        <a href="#forum" class="nav__link">Forum</a>
+        <a href="#reviews" class="nav__link">Reviews</a>
+        <a href="#guides" class="nav__link">Guides</a>
+        <a href="#support" class="nav__link">Support</a>
+      </nav>
+
+      <div class="header__actions">
+        <form class="search" role="search" onsubmit="return false">
+          <svg class="search__icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19l-4.99-5Zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14Z"/></svg>
+          <input type="search" placeholder="Search posts, guides..." aria-label="Поиск">
+        </form>
+        <a href="#" class="btn btn--ghost btn--sm">Log in</a>
+        <a href="#subscribe" class="btn btn--primary btn--sm">Sign up</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="container hero__grid">
+
+        <!-- Left: copy -->
+        <div class="hero__copy reveal">
+          <span class="badge"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M16 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm-8 0a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm0 2c-2.7 0-8 1.3-8 4v3h10v-3c0-.9.4-1.7 1-2.4A13 13 0 0 0 8 13Zm8 0c-.4 0-.8 0-1.3.1A5.5 5.5 0 0 1 18 17v3h6v-3c0-2.7-5.3-4-8-4Z"/></svg> Community · Trusted · Secure</span>
+          <h1 class="hero__title">
+            Buy Discord<br>Subscriptions.<br>
+            <span class="gradient-text">Join the Community.</span>
+          </h1>
+          <p class="hero__subtitle">
+            Get premium Discord subscriptions at the best prices.<br>
+            Join discussions, share feedback and grow together.
+          </p>
+          <div class="hero__cta">
+            <a href="#subscriptions" class="btn btn--primary btn--lg">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M7 18a2 2 0 1 0 2 2 2 2 0 0 0-2-2Zm10 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2ZM7.2 14.6l.9-1.6h7.4a2 2 0 0 0 1.8-1L21 5.5 19.2 4.5l-3.7 6.5H8.5L5.2 4H2v2h2l3.6 7.6-1.4 2.5A2 2 0 0 0 8 19h12v-2H8.4a.2.2 0 0 1-.2-.2Z"/></svg>
+              Browse Subscriptions
+            </a>
+            <a href="#forum" class="btn btn--dark btn--lg">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M16 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm-8 0a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm0 2c-2.7 0-8 1.3-8 4v3h10v-3c0-.9.4-1.7 1-2.4A13 13 0 0 0 8 13Zm8 0c-.4 0-.8 0-1.3.1A5.5 5.5 0 0 1 18 17v3h6v-3c0-2.7-5.3-4-8-4Z"/></svg>
+              Join the Community
+            </a>
+          </div>
+          <ul class="trust">
+            <li><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M12 1 3 5v6c0 5.6 3.8 10.7 9 12 5.2-1.3 9-6.4 9-12V5Zm-2 15-4-4 1.4-1.4L10 13.2l4.6-4.6L16 10Z"/></svg> Verified Sellers</li>
+            <li><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M18 8h-1V6A5 5 0 0 0 7 6v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2Zm-6 9a2 2 0 1 1 2-2 2 2 0 0 1-2 2Zm3-9H9V6a3 3 0 0 1 6 0Z"/></svg> Safe Payments</li>
+            <li><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm1 15h-2v-6h2Zm0-8h-2V7h2Z"/></svg> 24/7 Support</li>
+          </ul>
+        </div>
+
+        <!-- Center: illustration -->
+        <div class="hero__art reveal" aria-hidden="true">
+          <div class="art-glow"></div>
+          <div class="art-blob"></div>
+          <div class="mascot">
+            <div class="mascot__face">
+              <svg viewBox="0 0 240 200" width="220" fill="none">
+                <defs>
+                  <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#7b83f7"/><stop offset="1" stop-color="#5865F2"/>
+                  </linearGradient>
+                </defs>
+                <path d="M60 40h120a30 30 0 0 1 30 30v60a30 30 0 0 1-30 30H90l-40 30v-30a30 30 0 0 1-30-30V70a30 30 0 0 1 30-30Z" fill="url(#mg)"/>
+                <ellipse cx="90" cy="105" rx="16" ry="20" fill="#0d0e18"/>
+                <ellipse cx="150" cy="105" rx="16" ry="20" fill="#0d0e18"/>
+                <ellipse cx="95" cy="100" rx="5" ry="6" fill="#fff"/>
+                <ellipse cx="155" cy="100" rx="5" ry="6" fill="#fff"/>
+              </svg>
+            </div>
+          </div>
+          <div class="float-card float-card--nitro">
+            <span class="float-card__badge">NITRO</span>
+            <span class="float-card__sub">1 Month</span>
+          </div>
+          <div class="float-icon float-icon--shield">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="#fff"><path d="M12 1 3 5v6c0 5.6 3.8 10.7 9 12 5.2-1.3 9-6.4 9-12V5Zm-2 15-4-4 1.4-1.4L10 13.2l4.6-4.6L16 10Z"/></svg>
+          </div>
+          <div class="float-icon float-icon--chat">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="#fff"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Zm-9 9H9V9h2Zm4 0h-2V9h2Z"/></svg>
+          </div>
+          <div class="float-icon float-icon--crown">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="#fbbf24"><path d="M12 6 8.5 10 4 6l1.5 11h13L20 6l-4.5 4Z"/></svg>
+          </div>
+          <div class="float-gem"></div>
+        </div>
+
+        <!-- Right: side cards -->
+        <aside class="hero__side">
+          <div class="side-card reveal">
+            <h3 class="side-card__title">Why our community?</h3>
+            <ul class="whylist">
+              <li>
+                <span class="whylist__ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm-8 0a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm0 2c-2.7 0-8 1.3-8 4v3h10v-3c0-.9.4-1.7 1-2.4A13 13 0 0 0 8 13Zm8 0c-.4 0-.8 0-1.3.1A5.5 5.5 0 0 1 18 17v3h6v-3c0-2.7-5.3-4-8-4Z"/></svg></span>
+                <div><strong>Trusted by thousands</strong><span>Active members and happy buyers</span></div>
+              </li>
+              <li>
+                <span class="whylist__ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 1 8 5H2l4 5-2 6 8-3 8 3-2-6 4-5h-6Z"/></svg></span>
+                <div><strong>Best prices</strong><span>Cheapest subscriptions on the market</span></div>
+              </li>
+              <li>
+                <span class="whylist__ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/></svg></span>
+                <div><strong>Community driven</strong><span>Forums, guides and real reviews</span></div>
+              </li>
+              <li>
+                <span class="whylist__ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M13 2 3 14h7l-1 8 10-12h-7Z"/></svg></span>
+                <div><strong>Secure &amp; fast</strong><span>Safe payments and instant delivery</span></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="promo-card reveal">
+            <div class="promo-card__top">
+              <span class="promo-card__emoji">🎁</span>
+              <div>
+                <strong>Nitro Giveaway</strong>
+                <span>Join the event and win Nitro!</span>
+              </div>
+            </div>
+            <div class="promo-card__bottom">
+              <div class="avatars">
+                <span class="avatar"></span><span class="avatar"></span><span class="avatar"></span>
+                <span class="avatar-count">120 joined</span>
+              </div>
+              <a href="#" class="btn btn--light btn--xs">Join now</a>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- ============ POPULAR SUBSCRIPTIONS ============ -->
+    <section class="section" id="subscriptions">
+      <div class="container">
+        <div class="panel reveal">
+          <div class="panel__head">
+            <h2 class="panel__title">Popular Subscriptions</h2>
+            <button class="scroller__arrow" id="subsNext" aria-label="Дальше">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="m9 6 6 6-6 6-1.4-1.4L12.2 12 7.6 7.4Z"/></svg>
+            </button>
+          </div>
+          <div class="subs-scroller" id="subsScroller">
+            <!-- card -->
+            <article class="sub-card">
+              <span class="sub-card__ico sub-card__ico--nitro">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="#fff"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm-1 15-4-4 1.4-1.4L11 13.2l4.6-4.6L17 9Z"/></svg>
+              </span>
+              <div class="sub-card__info"><strong>Discord Nitro</strong><span>1 Month</span></div>
+              <div class="sub-card__buy">
+                <span class="sub-card__price">$3.49</span>
+                <button class="cart-btn" aria-label="В корзину"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor"><path d="M7 18a2 2 0 1 0 2 2 2 2 0 0 0-2-2Zm10 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2ZM7.2 14.6l.9-1.6h7.4a2 2 0 0 0 1.8-1L21 5.5 19.2 4.5l-3.7 6.5H8.5L5.2 4H2v2h2l3.6 7.6-1.4 2.5A2 2 0 0 0 8 19h12v-2H8.4Z"/></svg></button>
+              </div>
+            </article>
+            <article class="sub-card">
+              <span class="sub-card__ico sub-card__ico--nitro"><svg viewBox="0 0 24 24" width="22" height="22" fill="#fff"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm-1 15-4-4 1.4-1.4L11 13.2l4.6-4.6L17 9Z"/></svg></span>
+              <div class="sub-card__info"><strong>Discord Nitro</strong><span>3 Months</span></div>
+              <div class="sub-card__buy"><span class="sub-card__price">$8.99</span><button class="cart-btn" aria-label="В корзину"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor"><path d="M7 18a2 2 0 1 0 2 2 2 2 0 0 0-2-2Zm10 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2ZM7.2 14.6l.9-1.6h7.4a2 2 0 0 0 1.8-1L21 5.5 19.2 4.5l-3.7 6.5H8.5L5.2 4H2v2h2l3.6 7.6-1.4 2.5A2 2 0 0 0 8 19h12v-2H8.4Z"/></svg></button></div>
+            </article>
+            <article class="sub-card">
+              <span class="sub-card__ico sub-card__ico--nitro"><svg viewBox="0 0 24 24" width="22" height="22" fill="#fff"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm-1 15-4-4 1.4-1.4L11 13.2l4.6-4.6L17 9Z"/></svg></span>
+              <div class="sub-card__info"><strong>Discord Nitro</strong><span>12 Months</span></div>
+              <div class="sub-card__buy"><span class="sub-card__price">$29.99</span><button class="cart-btn" aria-label="В корзину"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor"><path d="M7 18a2 2 0 1 0 2 2 2 2 0 0 0-2-2Zm10 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2ZM7.2 14.6l.9-1.6h7.4a2 2 0 0 0 1.8-1L21 5.5 19.2 4.5l-3.7 6.5H8.5L5.2 4H2v2h2l3.6 7.6-1.4 2.5A2 2 0 0 0 8 19h12v-2H8.4Z"/></svg></button></div>
+            </article>
+            <article class="sub-card">
+              <span class="sub-card__ico sub-card__ico--boost"><svg viewBox="0 0 24 24" width="22" height="22" fill="#fff"><path d="m12 2 4 4-4 4-4-4Zm0 8 4 4-4 4-4-4Z"/></svg></span>
+              <div class="sub-card__info"><strong>Discord Server Boost</strong><span>1 Month</span></div>
+              <div class="sub-card__buy"><span class="sub-card__price">$1.99</span><button class="cart-btn" aria-label="В корзину"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor"><path d="M7 18a2 2 0 1 0 2 2 2 2 0 0 0-2-2Zm10 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2ZM7.2 14.6l.9-1.6h7.4a2 2 0 0 0 1.8-1L21 5.5 19.2 4.5l-3.7 6.5H8.5L5.2 4H2v2h2l3.6 7.6-1.4 2.5A2 2 0 0 0 8 19h12v-2H8.4Z"/></svg></button></div>
+            </article>
+            <article class="sub-card">
+              <span class="sub-card__ico sub-card__ico--yt"><svg viewBox="0 0 24 24" width="22" height="22" fill="#fff"><path d="M10 15l5-3-5-3v6Zm11-3a29 29 0 0 0-.5-5 3 3 0 0 0-2-2C16.7 4.6 12 4.6 12 4.6s-4.7 0-6.5.4a3 3 0 0 0-2 2A29 29 0 0 0 3 12a29 29 0 0 0 .5 5 3 3 0 0 0 2 2c1.8.4 6.5.4 6.5.4s4.7 0 6.5-.4a3 3 0 0 0 2-2 29 29 0 0 0 .5-5Z"/></svg></span>
+              <div class="sub-card__info"><strong>YouTube Premium</strong><span>1 Month</span></div>
+              <div class="sub-card__buy"><span class="sub-card__price">$2.99</span><button class="cart-btn" aria-label="В корзину"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor"><path d="M7 18a2 2 0 1 0 2 2 2 2 0 0 0-2-2Zm10 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2ZM7.2 14.6l.9-1.6h7.4a2 2 0 0 0 1.8-1L21 5.5 19.2 4.5l-3.7 6.5H8.5L5.2 4H2v2h2l3.6 7.6-1.4 2.5A2 2 0 0 0 8 19h12v-2H8.4Z"/></svg></button></div>
+            </article>
+            <article class="sub-card">
+              <span class="sub-card__ico sub-card__ico--spotify"><svg viewBox="0 0 24 24" width="22" height="22" fill="#fff"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm4.5 14.4a.8.8 0 0 1-1 .3 12 12 0 0 0-6.6-1.1.8.8 0 0 1-.3-1.5 13.5 13.5 0 0 1 7.5 1.2.8.8 0 0 1 .4 1.1Zm1.2-2.8a1 1 0 0 1-1.3.3 15 15 0 0 0-8-1.3 1 1 0 1 1-.3-1.9 17 17 0 0 1 9 1.5 1 1 0 0 1 .6 1.4Zm.1-2.9A18 18 0 0 0 8 9.2a1.1 1.1 0 1 1-.6-2.2 20 20 0 0 1 11 1 1.1 1.1 0 1 1-1 2Z"/></svg></span>
+              <div class="sub-card__info"><strong>Spotify Premium</strong><span>1 Month</span></div>
+              <div class="sub-card__buy"><span class="sub-card__price">$1.99</span><button class="cart-btn" aria-label="В корзину"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor"><path d="M7 18a2 2 0 1 0 2 2 2 2 0 0 0-2-2Zm10 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2ZM7.2 14.6l.9-1.6h7.4a2 2 0 0 0 1.8-1L21 5.5 19.2 4.5l-3.7 6.5H8.5L5.2 4H2v2h2l3.6 7.6-1.4 2.5A2 2 0 0 0 8 19h12v-2H8.4Z"/></svg></button></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MAIN GRID: categories / forum / contributors / reviews ============ -->
+    <section class="section">
+      <div class="container main-grid">
+
+        <!-- Categories -->
+        <aside class="panel reveal" id="guides">
+          <h2 class="panel__title panel__title--sm">Categories</h2>
+          <ul class="cat-list">
+            <li class="cat-list__item is-active"><span class="cat-list__ico">🎮</span> Discord <span class="cat-list__count">24</span></li>
+            <li class="cat-list__item"><span class="cat-list__ico">📺</span> Streaming <span class="cat-list__count">15</span></li>
+            <li class="cat-list__item"><span class="cat-list__ico">🎵</span> Music <span class="cat-list__count">12</span></li>
+            <li class="cat-list__item"><span class="cat-list__ico">🎓</span> Education <span class="cat-list__count">8</span></li>
+            <li class="cat-list__item"><span class="cat-list__ico">🧰</span> Utilities <span class="cat-list__count">10</span></li>
+            <li class="cat-list__item"><span class="cat-list__ico">👾</span> Gaming <span class="cat-list__count">14</span></li>
+          </ul>
+          <a href="#" class="link-more">View all categories</a>
+        </aside>
+
+        <!-- Forum -->
+        <div class="panel reveal" id="forum">
+          <div class="panel__head">
+            <h2 class="panel__title panel__title--sm">Community Forum</h2>
+            <a href="#" class="link-more">View all discussions ›</a>
+          </div>
+          <ul class="thread-list">
+            <li class="thread">
+              <span class="thread__ico">💬</span>
+              <div class="thread__body">
+                <p class="thread__title">Best way to get cheap Nitro? <span class="tag tag--new">new</span></p>
+                <span class="thread__meta">General Discussion · 45 replies</span>
+              </div>
+              <span class="thread__time">2m ago</span>
+            </li>
+            <li class="thread">
+              <span class="thread__ico">⭐</span>
+              <div class="thread__body">
+                <p class="thread__title">Nitro Giveaway Event 🎉</p>
+                <span class="thread__meta">Events · 120 replies</span>
+              </div>
+              <span class="thread__time">1h ago</span>
+            </li>
+            <li class="thread">
+              <span class="thread__ico">🚀</span>
+              <div class="thread__body">
+                <p class="thread__title">How to boost your server effectively</p>
+                <span class="thread__meta">Guides · 23 replies</span>
+              </div>
+              <span class="thread__time">3h ago</span>
+            </li>
+            <li class="thread">
+              <span class="thread__ico">💳</span>
+              <div class="thread__body">
+                <p class="thread__title">Payment methods availability</p>
+                <span class="thread__meta">Support · 18 replies</span>
+              </div>
+              <span class="thread__time">5h ago</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Top contributors -->
+        <aside class="panel reveal">
+          <h2 class="panel__title panel__title--sm">Top Contributors</h2>
+          <ol class="contrib-list">
+            <li class="contrib"><span class="contrib__rank">1</span><span class="contrib__ava"></span><div class="contrib__info"><strong>LunarFlow</strong><span>1,250 posts</span></div><span class="contrib__crown">👑</span></li>
+            <li class="contrib"><span class="contrib__rank">2</span><span class="contrib__ava"></span><div class="contrib__info"><strong>PixelWizard</strong><span>980 posts</span></div><span class="contrib__crown">🥈</span></li>
+            <li class="contrib"><span class="contrib__rank">3</span><span class="contrib__ava"></span><div class="contrib__info"><strong>NekoYuki</strong><span>750 posts</span></div><span class="contrib__crown">🥉</span></li>
+            <li class="contrib"><span class="contrib__rank">4</span><span class="contrib__ava"></span><div class="contrib__info"><strong>CyberNova</strong><span>620 posts</span></div></li>
+            <li class="contrib"><span class="contrib__rank">5</span><span class="contrib__ava"></span><div class="contrib__info"><strong>ShadowX</strong><span>510 posts</span></div></li>
+          </ol>
+        </aside>
+
+        <!-- Recent reviews -->
+        <aside class="panel reveal" id="reviews">
+          <div class="panel__head">
+            <h2 class="panel__title panel__title--sm">Recent Reviews</h2>
+            <a href="#" class="link-more">View all</a>
+          </div>
+          <ul class="review-list">
+            <li class="review">
+              <div class="review__head"><span class="review__ico sub-card__ico--nitro"></span><div><strong>Discord Nitro 12 Months</strong><span class="stars">★★★★★ <em>by @LunarFlow</em></span></div></div>
+              <p class="review__text">Best price and instant delivery!</p>
+            </li>
+            <li class="review">
+              <div class="review__head"><span class="review__ico sub-card__ico--yt"></span><div><strong>YouTube Premium</strong><span class="stars">★★★★★ <em>by @PixelWizard</em></span></div></div>
+              <p class="review__text">Everything works perfectly!</p>
+            </li>
+            <li class="review">
+              <div class="review__head"><span class="review__ico sub-card__ico--spotify"></span><div><strong>Spotify Premium</strong><span class="stars">★★★★★ <em>by @NekoYuki</em></span></div></div>
+              <p class="review__text">Fast and reliable. Thank you!</p>
+            </li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- ============ NEWSLETTER / SUBSCRIBE ============ -->
+    <section class="section" id="subscribe">
+      <div class="container">
+        <div class="newsletter reveal">
+          <div class="newsletter__copy">
+            <h2 class="newsletter__title">Не заходишь каждый день? Лови дайджест на почту</h2>
+            <p class="newsletter__text">Раз в неделю — лучшие треды, ивенты и скидки на подписки. Без спама, отписка в один клик.</p>
+          </div>
+          <form class="newsletter__form" id="subscribeForm" novalidate>
+            <div class="field">
+              <input type="email" name="email" id="emailInput" placeholder="you@example.com" autocomplete="email" required aria-label="Email">
+              <button type="submit" class="btn btn--primary" id="subscribeBtn">Подписаться</button>
+            </div>
+            <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS BAR ============ -->
+    <section class="section" id="support">
+      <div class="container">
+        <div class="stats-bar reveal">
+          <div class="stat"><span class="stat__ico">👥</span><div><strong class="stat__num" data-target="25000" data-suffix="K+">25K+</strong><span>Members</span></div></div>
+          <div class="stat"><span class="stat__ico">📦</span><div><strong class="stat__num" data-target="10000" data-suffix="K+">10K+</strong><span>Successful Orders</span></div></div>
+          <div class="stat"><span class="stat__ico">⭐</span><div><strong class="stat__num">99.9%</strong><span>Positive Reviews</span></div></div>
+          <div class="stat"><span class="stat__ico">🛟</span><div><strong class="stat__num">24/7</strong><span>Community Support</span></div></div>
+          <div class="stats-bar__cta">
+            <span>Join our growing community today!</span>
+            <a href="#subscribe" class="btn btn--primary">Sign up now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#top" class="logo">
+          <span class="logo__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.24.5a18.3 18.3 0 0 1 4.35 1.35 16.6 16.6 0 0 0-5-1.6 17.9 17.9 0 0 0-4.6 0 16.6 16.6 0 0 0-5 1.6A18.3 18.3 0 0 1 9.6 3.5L9.36 3A19.8 19.8 0 0 0 4.47 4.4C1.6 8.63.82 12.75 1.2 16.8a19.9 19.9 0 0 0 6.06 3.05l.73-1a11.6 11.6 0 0 1-1.83-.88l.45-.35a14.2 14.2 0 0 0 12.13 0l.45.35c-.58.34-1.19.63-1.83.88l.73 1a19.8 19.8 0 0 0 6.06-3.05c.45-4.7-.77-8.79-3.35-12.4ZM8.55 14.32c-1.18 0-2.15-1.08-2.15-2.4s.95-2.42 2.15-2.42 2.17 1.09 2.15 2.42c0 1.32-.96 2.4-2.15 2.4Zm6.9 0c-1.18 0-2.15-1.08-2.15-2.4s.95-2.42 2.15-2.42 2.17 1.09 2.15 2.42c0 1.32-.95 2.4-2.15 2.4Z"/></svg></span>
+          <span class="logo__text">Discord<span class="logo__accent">Hub</span></span>
+        </a>
+        <p class="footer__desc">Premium Discord-подписки и живое сообщество в одном месте.</p>
+      </div>
+      <nav class="footer__col">
+        <h4>Community</h4>
+        <a href="#forum">Forum</a><a href="#reviews">Reviews</a><a href="#guides">Guides</a>
+      </nav>
+      <nav class="footer__col">
+        <h4>Shop</h4>
+        <a href="#subscriptions">Subscriptions</a><a href="#subscribe">Newsletter</a><a href="#support">Support</a>
+      </nav>
+      <nav class="footer__col">
+        <h4>Legal</h4>
+        <a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Server Rules</a>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> DiscordHub. Все права защищены.</span>
+      <div class="socials">
+        <a href="#" aria-label="Discord"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.24.5a18.3 18.3 0 0 1 4.35 1.35 16.6 16.6 0 0 0-5-1.6 17.9 17.9 0 0 0-4.6 0 16.6 16.6 0 0 0-5 1.6A18.3 18.3 0 0 1 9.6 3.5L9.36 3A19.8 19.8 0 0 0 4.47 4.4C1.6 8.63.82 12.75 1.2 16.8a19.9 19.9 0 0 0 6.06 3.05l.73-1a11.6 11.6 0 0 1-1.83-.88l.45-.35a14.2 14.2 0 0 0 12.13 0l.45.35c-.58.34-1.19.63-1.83.88l.73 1a19.8 19.8 0 0 0 6.06-3.05c.45-4.7-.77-8.79-3.35-12.4ZM8.55 14.32c-1.18 0-2.15-1.08-2.15-2.4s.95-2.42 2.15-2.42 2.17 1.09 2.15 2.42c0 1.32-.96 2.4-2.15 2.4Zm6.9 0c-1.18 0-2.15-1.08-2.15-2.4s.95-2.42 2.15-2.42 2.17 1.09 2.15 2.42c0 1.32-.95 2.4-2.15 2.4Z"/></svg></a>
+        <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M22 5.8a8 8 0 0 1-2.4.7 4 4 0 0 0 1.8-2.3 8 8 0 0 1-2.6 1A4 4 0 0 0 12 8.9a11 11 0 0 1-8-4 4 4 0 0 0 1.2 5.3 4 4 0 0 1-1.8-.5 4 4 0 0 0 3.2 4 4 4 0 0 1-1.8 0 4 4 0 0 0 3.7 2.8A8 8 0 0 1 2 18.3a11 11 0 0 0 6 1.7c7.2 0 11.1-6 11.1-11.1v-.5A8 8 0 0 0 22 5.8Z"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
